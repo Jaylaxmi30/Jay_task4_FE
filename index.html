@@ -1,0 +1,464 @@
+<html>
+<head>
+    <link href="css/all.min.css">
+    <title>Task 4</title>
+    <style>
+        #box {
+            width: 1500px;
+            height: 800px;
+            z-index: -1;
+            background-color: #E8A317;
+            margin-top: 70px;
+        }
+
+            #box:hover {
+                box-shadow: 15px 15px 15px #FBD5AB;
+            }
+
+            #box .p1 {
+                padding-top: 760px;
+                font-size: 30px;
+                font-family: Monotype Corsiva;
+                text-shadow: 1px 1px 2px black;
+            }
+
+
+        .container {
+            width: 600px;
+            height: 700px;
+            float: left;
+            margin-top: 40px;
+            margin-left: 10px;
+            margin-right: 10px;
+            z-index: 1;
+        }
+
+            .container:hover {
+                box-shadow: 5px 5px 5px black;
+            }
+
+            .container img {
+                width:560px;
+                height:600px;
+            }
+            .container img:hover {
+                animation-name: img;
+                animation-duration: 1s;
+            }
+
+            @keyframes img{
+                from {
+                content: url(pup99.jpg);
+                }
+                to {
+                content: url(pup777.jpg);
+                }
+            }
+
+                .form {
+                    background-color: #FBD5AB;
+                    z-index: 1;
+                    width: 850px;
+                    height: 660px;
+                    float: right;
+                    margin-top: 60px;
+                    margin-right: 20px;
+                }
+                .form:hover {
+                    box-shadow: 5px 5px 5px black;
+                }
+
+            .form h1 {
+                margin-top: 20px;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-bottom: 20px;
+            }
+
+        .div11 {
+            float: left;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+            .div11 lable {
+                font-size: 25px;
+            }
+
+            .div11 input[type=text] {
+                font-size: 20px;
+                border: 2px solid black;
+                border-radius: 3px;
+                box-shadow: 5px 5px 5px black;
+            }
+
+        .div12 {
+            float: right;
+            margin-right: 35px;
+            margin-top: 10px;
+        }
+
+            .div12 lable {
+                font-size: 25px;
+                margin-right: 55px;
+            }
+
+            .div12 input[type=file] {
+                font-size: 15px;
+                box-shadow: 5px 5px 5px black;
+                background-color: white;
+                padding:10px;
+                border:2px solid black;
+            }
+
+        .div21 {
+            float: left;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+            .div21 lable {
+                font-size: 25px;
+            }
+
+            .div21 input[type=text] {
+                font-size: 20px;
+                border: 2px solid black;
+                border-radius: 3px;
+                box-shadow: 5px 5px 5px black;
+            }
+
+        .div22 {
+            float: right;
+            margin-right: 90px;
+            margin-top: 10px;
+        }
+
+            .div22 lable {
+                font-size: 25px;
+            }
+
+            .div22 input[type=date] {
+                font-size: 20px;
+                border: 2px solid black;
+                border-radius: 3px;
+                box-shadow: 5px 5px 5px black;
+            }
+
+        .div31 {
+            float: left;
+            margin-left: 70px;
+            margin-top: 0px;
+        }
+
+        .div32 {
+            float: right;
+            margin-right: 90px;
+            margin-top: 0px;
+        }
+
+        .div4 {
+            margin-right: 90px;
+            padding-top: 1px;
+        }
+
+
+        .con {
+            display: inline-block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+            .con input[type=text] {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+        }
+
+        .con:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+
+        .con input:checked ~ .checkmark {
+            background-color: red;
+        }
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .con input:checked ~ .checkmark:after {
+            display: inline-block;
+        }
+
+        .con .checkmark:after {
+            top: 9px;
+            left: 9px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+        }
+
+        /*----------------------------------*/
+
+        .con1 {
+            display: inline-block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .con1 input[type=text] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .checkmark1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+        }
+
+        .con1:hover input ~ .checkmark1 {
+            background-color: #ccc;
+        }
+
+        .con1 input:checked ~ .checkmark1 {
+            background-color: red;
+        }
+
+        .checkmark1:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .con1 input:checked ~ .checkmark1:after {
+            display: inline-block;
+        }
+
+        .con1 .checkmark1:after {
+            top: 9px;
+            left: 9px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+        }
+        /* -------------------------------*/
+        .con2 {
+            display: inline-block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .con2 input[type=text] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .checkmark2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+        }
+
+        .con2:hover input ~ .checkmark2 {
+            background-color: #ccc;
+        }
+
+        .con2 input:checked ~ .checkmark2 {
+            background-color: red;
+        }
+
+        .checkmark2:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .con2 input:checked ~ .checkmark2:after {
+            display: inline-block;
+        }
+
+        .con2 .checkmark2:after {
+            top: 9px;
+            left: 9px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+        }
+
+
+        .button {
+            margin-top: 30px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 100px;
+            font-size: 20px;
+            box-shadow: 5px 5px 5px black;
+        }
+
+            .button:hover {
+                background-color: #B8860B;
+            }
+    </style>
+</head>
+<body bgcolor="#BCB88A">
+    <center>
+        <div id="box">
+            <div class="container">
+                <h2 style="font-family: Matura MT Script Capitals; font-size: 25px; margin-left:10px;"><i class="fas fa-shield-dog" style="font-size: 40px;"></i>  PUPASSURE</h2>
+                <center>
+                    <div>
+                        <img src="pup99.jpg" alt="puppy">
+                    </div>
+                </center>
+            </div>
+            <div class="form">
+                <h1>Yay, puppies! Ensure your pup gets the best care!</h1>
+                <form>
+                    <!--DIV 1-->
+                    <div style="width:100%; height:120px;">
+                        <div class="div11">
+                            <lable for="name">Name :</lable><br><br>
+                            <input type="text" id="name" name="name" placeholder="Pet's Name.." required>
+                        </div>
+
+                        <div class="div12">
+                            <lable for="photo"><i class="fas fa-camera-retro" style="border:2px solid black; border-radius:50%; margin-right:20px; padding:5px; display:inline-block;"></i>Update a Photo :</lable><br><br>
+                            <input type="file" id="photo" name="photo">
+                        </div>
+                    </div>
+                    <!--DIV 1-->
+                    <!--DIV 2-->
+                    <div style="width: 100%; height: 120px;">
+                        <div class="div21">
+                            <lable for="breed">Breed :</lable><br><br>
+                            <input type="text" id="breed" name="breed" placeholder="Pet's Breed.." required>
+                        </div>
+
+                        <div class="div22">
+                            <lable for="birth">Birthday :</lable><br><br>
+                            <input type="date" id="birth" name="birth">
+                        </div>
+                    </div>
+                    <!--DIV 2-->
+                    <!--DIV 3-->
+                    <div style="width: 100%; height: 120px;">
+                        <div class="div31">
+                            <h2>Gender :</h2>
+                            <span class="checkmark"></span>
+                            <lable for="gender" class="con">
+                                Female
+                                <input type="radio" name="radio" required>
+                            </lable>
+
+                            <span class="checkmark"></span>
+                            <lable for="gender" class="con">
+                                Male
+                                <input type="radio" name="radio" required>
+                            </lable>
+                        </div>
+
+                        <div class="div32">
+                            <h2>Spayed or Neutered :</h2>
+                            <span class="checkmark1"></span>
+                            <lable for="gender" class="con1">
+                                Spayed
+                                <input type="radio" name="radio" required>
+                            </lable>
+
+                            <span class="checkmark1"></span>
+                            <lable for="gender" class="con1">
+                                Neutered
+                                <input type="radio" name="radio" required>
+                            </lable>
+                        </div>
+                    </div>
+                    <!--DIV 3-->
+                    <!--DIV 4-->
+                    <div style="width: 100%; height: 120px;">
+                        <center>
+                            <div class="div4">
+                                <h2>Weight :</h2>
+                                <span class="checkmark2"></span>
+                                <lable for="gender" class="con2">
+                                    0-25 lbs
+                                    <input type="radio" name="radio" required>
+                                </lable>
+
+                                <span class="checkmark2"></span>
+                                <lable for="gender" class="con">
+                                    25-50 lbs
+                                    <input type="radio" name="radio" required>
+                                </lable>
+                                <span class="checkmark2"></span>
+                                <lable for="gender" class="con">
+                                    50-100 lbs
+                                    <input type="radio" name="radio" required>
+                                </lable>
+
+                                <span class="checkmark2"></span>
+                                <lable for="gender" class="con">
+                                    100+ lbs
+                                    <input type="radio" name="radio" required>
+                                </lable>
+                            </div>
+                        </center>
+                    </div>
+                    <!--DIV 4-->
+                    <div style="width: 100%; height: 102px; ">
+                        <button class="button" style="float:left; margin-left:30px;">Back</button>
+                        <button class="button" style="float: right; margin-right: 30px;">Next</button>
+                    </div>
+                </form>
+            </div>
+            <p class="p1">For more info Contact <i class="fas fa-phone" style="font-size: 15px;"></i>1234567890</p>
+        </div>
+    </center>
+    <script src="js/all.min.js"></script>
+</body>
+</html>
